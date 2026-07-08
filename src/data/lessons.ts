@@ -42,24 +42,88 @@ openclaw onboard
 | \`openclaw gateway restart\` | Restart daemon |
 | \`openclaw help\` | Get help on any command |
 
-
-
 ---
 
 **Next up:** Lesson 2
 `
   },
   {
-    id: 'lesson-4',
+    id: 'lesson-2',
     number: 2,
     title: 'Projects & File Management',
     content: `# Projects & File Management
 
-_Coming soon..._
+---
+
+## 2.1 The Workspace
+
+Your workspace lives at:
+
+\`\`\`bash
+cd ~/.openclaw/workspace
+\`\`\`
+
+This is where everything lives — projects, notes, configuration. It's also where I (the AI) create and manage files.
+
+Key files already there:
+
+| File | Purpose |
+|---|---|
+| \`AGENTS.md\` | My operating manual and your preferences |
+| \`SOUL.md\` | My personality and boundaries |
+| \`USER.md\` | Info about you |
+| \`MEMORY.md\` | My long-term memory |
+| \`HEARTBEAT.md\` | Periodic background checks |
+| \`TOOLS.md\` | Environment-specific notes |
+
+---
+
+## 2.2 Creating Projects
+
+Projects go inside the \`projects/\` folder:
+
+\`\`\`
+workspace/
+└── projects/
+    └── openclaw-wiki/    ← the wiki we just built
+        ├── src/
+        ├── package.json
+        └── ...
+\`\`\`
+
+When you want to start something new, just tell me. I'll scaffold the structure, write the code, install deps, and get it running.
+
+---
+
+## 2.3 How I Work With Files
+
+I can do all of these just by asking:
+
+| Action | How it works |
+|---|---|
+| Read files | \`read path/to/file\` |
+| Create files | \`write path/to/file\` with content |
+| Edit files | \`edit\` with exact text replacement |
+| Run commands | \`exec command\` (I show output) |
+| List directories | \`ls -la\` via exec |
+| Search code | grep or memory search |
+
+---
+
+## 2.4 Best Practices
+
+- **One project = one folder** inside \`projects/\`
+- Each project should have a \`README.md\` explaining what it does
+- Use Git for version control (like we did with the wiki)
+- Keep the workspace clean — don't scatter files at root
+
+---
+
+**Tip:** Anything we build, I'll keep inside \`projects/\`. If you ever need to find something, just ask.
 `
   },
   {
-    id: 'lesson-5',
+    id: 'lesson-3',
     number: 3,
     title: 'Skills & Extending Capabilities',
     content: `# Skills & Extending Capabilities
@@ -68,7 +132,7 @@ _Coming soon..._
 `
   },
   {
-    id: 'lesson-6',
+    id: 'lesson-4',
     number: 4,
     title: 'Channels & Connecting Apps',
     content: `# Channels & Connecting Apps
@@ -77,7 +141,7 @@ _Coming soon..._
 `
   },
   {
-    id: 'lesson-7',
+    id: 'lesson-5',
     number: 5,
     title: 'Automation & Cron Jobs',
     content: `# Automation & Cron Jobs
@@ -86,7 +150,7 @@ _Coming soon..._
 `
   },
   {
-    id: 'lesson-8',
+    id: 'lesson-6',
     number: 6,
     title: 'Advanced: Sub-agents & Multi-step Flows',
     content: `# Advanced: Sub-agents & Multi-step Flows
