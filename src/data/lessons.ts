@@ -128,7 +128,131 @@ I can do all of these just by asking:
     title: 'Skills & Extending Capabilities',
     content: `# Skills & Extending Capabilities
 
-_Coming soon..._
+---
+
+## 3.1 What Are Skills?
+
+Skills are markdown instruction files that teach the AI how and when to use specific tools. Each skill lives in a directory with a \`SKILL.md\` file.
+
+They're like plugins — you can install community skills from **ClawHub**, write your own, or use the built-in ones I already have.
+
+---
+
+## 3.2 Where Skills Live
+
+OpenClaw loads skills from several places, in priority order:
+
+| Priority | Location | Path |
+|---|---|---|
+| 1 (highest) | Workspace skills | \`<workspace>/skills/\` |
+| 2 | Project agent skills | \`<workspace>/.agents/skills/\` |
+| 3 | Personal agent skills | \`~/.agents/skills/\` |
+| 4 | Managed skills | \`~/.openclaw/skills/\` |
+| 5 | Bundled skills | shipped with OpenClaw |
+
+When the same skill name appears in multiple places, the higher priority wins.
+
+---
+
+## 3.3 Searching & Installing Skills
+
+Search ClawHub for community skills:
+
+\`\`\`bash
+openclaw skills search "calendar"
+openclaw skills search "weather"
+openclaw skills search --limit 20
+\`\`\`
+
+Install from ClawHub:
+
+\`\`\`bash
+openclaw skills install @owner/skill-name
+\`\`\`
+
+Install from Git:
+
+\`\`\`bash
+openclaw skills install git:owner/repo
+openclaw skills install git:owner/repo@main
+\`\`\`
+
+Install from a local directory:
+
+\`\`\`bash
+openclaw skills install ./path/to/skill --as custom-name
+\`\`\`
+
+---
+
+## 3.4 Managing Installed Skills
+
+\`\`\`bash
+# List all installed skills
+openclaw skills list
+openclaw skills list --verbose
+
+# Get info about a skill
+openclaw skills info <name>
+
+# Check which skills are ready to run
+openclaw skills check
+
+# Update a skill
+openclaw skills update @owner/slug
+openclaw skills update --all
+
+# Verify a ClawHub skill
+openclaw skills verify @owner/slug
+\`\`\`
+
+---
+
+## 3.5 Creating Your Own Skill
+
+Every skill is just a folder with a \`SKILL.md\` file:
+
+\`\`\`
+~/.openclaw/workspace/skills/my-skill/
+└── SKILL.md
+\`\`\`
+
+Example \`SKILL.md\`:
+
+\`\`\`markdown
+---
+name: my-skill
+description: What this skill does
+---
+
+# Instructions
+
+Tell the agent what to do when this skill is relevant.
+\`\`\`
+
+You can even create skills through me — I can use the Skill Workshop to draft and propose them for your review.
+
+---
+
+## 3.6 Built-in Skills I Already Have
+
+Currently loaded skills include:
+
+- **github** — GitHub CLI, issues, PRs, releases
+- **weather** — current weather and forecasts
+- **notion** — Notion API for pages, databases, search
+- **clawhub** — Search and install skills from ClawHub
+- **diagram-maker** — Create SVG diagrams and whiteboards
+- **meme-maker** — Generate memes from templates
+- **browser-automation** — Control web pages
+- **tmux** — Terminal multiplexer control
+- **taskflow** — Multi-step detached task coordination
+- **video-frames** — Extract frames from videos
+- **more...** (music, canvas, spike, healthcheck, etc.)
+
+---
+
+**Next up:** Lesson 4 — Channels & Connecting Apps
 `
   },
   {
