@@ -913,5 +913,23 @@ Now I can vet any skill before installing:
       '',
       "This wiki was built entirely with AI assistance \u2014 the same tools you just learned to use. Go build something awesome.",
     ].join('\n')
+  },
+  {
+    id: 'lesson-7',
+    number: 7,
+    title: 'Multi-Agent Architecture',
+    content: `# Multi-Agent Architecture
+
+_Coming soon..._
+`
+  },
+  {
+    id: 'lesson-8',
+    number: 8,
+    title: 'Sandbox & Execution Security',
+    content: `# Sandbox & Execution Security
+
+_Coming soon..._
+`
   }
 ]
