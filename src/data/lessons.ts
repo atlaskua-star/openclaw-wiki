@@ -252,6 +252,24 @@ Currently loaded skills include:
 
 ---
 
+---
+
+## 3.7 Real Example: Installing From ClawHub
+
+We installed **skill-vetter** — a security scanner that checks other skills for red flags before installation:
+
+\`\`\`bash
+openclaw skills install skill-vetter
+\`\`\`
+
+Now I can vet any skill before installing:
+
+\`\`\`
+"Vet this skill before I install it"
+\`\`\`
+
+---
+
 **Next up:** Lesson 4 — Channels & Connecting Apps
 `
   },
