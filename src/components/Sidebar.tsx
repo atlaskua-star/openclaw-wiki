@@ -6,7 +6,7 @@ export default function Sidebar({ lessons, activeLesson, onSelect }: SidebarProp
     <nav className="sidebar">
       <div className="sidebar-header">
         <h1>OpenClaw Wiki</h1>
-        <p className="sidebar-subtitle">Mastering the clawbot</p>
+        <p className="sidebar-subtitle">Mastering the OpenClaw</p>
       </div>
       <ul className="lesson-list">
         {lessons.map((lesson) => (

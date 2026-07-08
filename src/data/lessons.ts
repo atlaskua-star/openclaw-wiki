@@ -5,7 +5,7 @@ export const lessons: Lesson[] = [
     id: 'lesson-1',
     number: 1,
     title: 'Installation & CLI Commands',
-    content: `# Lesson 1: Installation & CLI Commands
+    content: `# Installation & CLI Commands
 
 ---
 
@@ -50,64 +50,46 @@ openclaw onboard
 `
   },
   {
-    id: 'lesson-2',
-    number: 2,
-    title: 'Talking to Your AI Agent',
-    content: `# Lesson 2: Talking to Your AI Agent
-
-_Coming soon..._
-`
-  },
-  {
-    id: 'lesson-3',
-    number: 3,
-    title: 'Memory & Persistence',
-    content: `# Lesson 3: Memory & Persistence
-
-_Coming soon..._
-`
-  },
-  {
     id: 'lesson-4',
-    number: 4,
+    number: 2,
     title: 'Projects & File Management',
-    content: `# Lesson 4: Projects & File Management
+    content: `# Projects & File Management
 
 _Coming soon..._
 `
   },
   {
     id: 'lesson-5',
-    number: 5,
+    number: 3,
     title: 'Skills & Extending Capabilities',
-    content: `# Lesson 5: Skills & Extending Capabilities
+    content: `# Skills & Extending Capabilities
 
 _Coming soon..._
 `
   },
   {
     id: 'lesson-6',
-    number: 6,
+    number: 4,
     title: 'Channels & Connecting Apps',
-    content: `# Lesson 6: Channels & Connecting Apps
+    content: `# Channels & Connecting Apps
 
 _Coming soon..._
 `
   },
   {
     id: 'lesson-7',
-    number: 7,
+    number: 5,
     title: 'Automation & Cron Jobs',
-    content: `# Lesson 7: Automation & Cron Jobs
+    content: `# Automation & Cron Jobs
 
 _Coming soon..._
 `
   },
   {
     id: 'lesson-8',
-    number: 8,
+    number: 6,
     title: 'Advanced: Sub-agents & Multi-step Flows',
-    content: `# Lesson 8: Advanced: Sub-agents & Multi-step Flows
+    content: `# Advanced: Sub-agents & Multi-step Flows
 
 _Coming soon..._
 `

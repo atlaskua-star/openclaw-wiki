@@ -1,6 +1,5 @@
 .lesson-view {
   flex: 1;
-  padding: 40px;
   overflow-y: auto;
   background: #000000;
 }
@@ -24,150 +23,199 @@
 }
 
 .lesson-content {
-  max-width: 780px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 48px 40px 80px;
 }
 
-/* Markdown styling */
+/* ───── Headings ───── */
+
 .lesson-content h1 {
-  font-size: 1.8rem;
-  color: #e5e5e5;
-  margin: 0 0 6px 0;
-  padding-bottom: 10px;
+  font-size: 2rem;
+  color: #3b82f6;
+  margin: 0 0 24px 0;
+  padding-bottom: 16px;
   border-bottom: 1px solid #1a1a1a;
-  font-weight: 500;
-}
-
-.lesson-content h1 code {
-  color: #60a5fa;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
 .lesson-content h2 {
-  font-size: 1.3rem;
-  color: #d4d4d4;
-  margin: 28px 0 10px 0;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #1a1a1a;
-  font-weight: 500;
+  font-size: 1.35rem;
+  color: #7aa9fa;
+  margin: 40px 0 12px 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 .lesson-content h3 {
-  font-size: 1.1rem;
-  color: #c0c0c0;
-  margin: 20px 0 6px 0;
-  font-weight: 500;
+  font-size: 1.05rem;
+  color: #6095f5;
+  margin: 28px 0 8px 0;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
+/* ───── Body text ───── */
+
 .lesson-content p {
-  line-height: 1.7;
+  line-height: 1.75;
   color: #a3a3a3;
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
+  font-size: 0.95rem;
 }
+
+/* ───── Inline code ───── */
 
 .lesson-content code {
   background: #0d0d0d;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 4px;
-  font-size: 0.9em;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace;
   color: #d4d4d4;
+  border: 1px solid #1a1a1a;
 }
 
+/* ───── Code blocks ───── */
+
 .lesson-content pre {
-  background: #0a0a0a;
-  padding: 14px;
-  border-radius: 6px;
+  background: #080808;
+  padding: 20px;
+  border-radius: 8px;
   overflow-x: auto;
-  margin: 14px 0;
-  border: 1px solid #1a1a1a;
+  margin: 20px 0;
+  border: 1px solid #181818;
+  position: relative;
 }
 
 .lesson-content pre code {
   background: transparent;
+  border: none;
   padding: 0;
-  color: #c0c0c0;
-  font-size: 0.85rem;
+  color: #c8c8c8;
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
-.lesson-content :not(pre) > code {
-  background: #0d0d0d;
-  border: 1px solid #1a1a1a;
-}
+/* ───── Blockquote ───── */
 
 .lesson-content blockquote {
-  border-left: 3px solid #3b82f6;
-  margin: 14px 0;
-  padding: 8px 16px;
-  background: #0a0a0a;
+  border-left: 2px solid #3b82f6;
+  margin: 20px 0;
+  padding: 12px 20px;
+  background: #080808;
   border-radius: 0 6px 6px 0;
 }
 
 .lesson-content blockquote p {
   margin: 0;
   color: #a3a3a3;
+  font-size: 0.9rem;
 }
+
+/* ───── Tables ───── */
 
 .lesson-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 14px 0;
-  font-size: 0.9rem;
+  margin: 20px 0;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .lesson-content th {
   background: #0a0a0a;
   color: #e5e5e5;
-  padding: 8px 12px;
+  padding: 10px 14px;
   text-align: left;
   font-weight: 500;
-  border-bottom: 2px solid #3b82f6;
-}
-
-.lesson-content th:first-child {
-  border-radius: 4px 0 0 0;
-}
-
-.lesson-content th:last-child {
-  border-radius: 0 4px 0 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #181818;
 }
 
 .lesson-content td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #1a1a1a;
+  padding: 10px 14px;
+  border-bottom: 1px solid #141414;
   color: #a3a3a3;
+}
+
+.lesson-content tr:last-child td {
+  border-bottom: none;
 }
 
 .lesson-content tr:nth-child(even) td {
-  background: #080808;
+  background: #060606;
 }
 
-.lesson-content ul, .lesson-content ol {
+/* ───── Lists ───── */
+
+.lesson-content ul,
+.lesson-content ol {
   line-height: 1.8;
   color: #a3a3a3;
-  margin: 6px 0 14px 0;
+  margin: 8px 0 20px 0;
   padding-left: 24px;
 }
 
 .lesson-content li {
-  margin: 3px 0;
+  margin: 4px 0;
 }
+
+.lesson-content li::marker {
+  color: #525252;
+}
+
+/* ───── Horizontal rule ───── */
 
 .lesson-content hr {
   border: none;
-  border-top: 1px solid #1a1a1a;
-  margin: 28px 0;
+  height: 1px;
+  background: #181818;
+  margin: 40px 0;
 }
+
+/* ───── Inline elements ───── */
 
 .lesson-content strong {
   color: #d4d4d4;
+  font-weight: 600;
+}
+
+.lesson-content em {
+  color: #a3a3a3;
 }
 
 .lesson-content a {
   color: #60a5fa;
   text-decoration: none;
+  transition: color 0.15s;
 }
 
 .lesson-content a:hover {
   color: #93bbfd;
   text-decoration: underline;
+}
+
+.lesson-content img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+/* ───── Responsive ───── */
+
+@media (max-width: 768px) {
+  .lesson-content {
+    padding: 32px 20px 60px;
+  }
+
+  .lesson-content h1 {
+    font-size: 1.6rem;
+  }
 }
