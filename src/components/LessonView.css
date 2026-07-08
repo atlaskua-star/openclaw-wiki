@@ -1,0 +1,173 @@
+.lesson-view {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background: #000000;
+}
+
+.lesson-view.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #404040;
+}
+
+.empty-state h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.lesson-content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Markdown styling */
+.lesson-content h1 {
+  font-size: 1.8rem;
+  color: #e5e5e5;
+  margin: 0 0 6px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a1a1a;
+  font-weight: 500;
+}
+
+.lesson-content h1 code {
+  color: #60a5fa;
+}
+
+.lesson-content h2 {
+  font-size: 1.3rem;
+  color: #d4d4d4;
+  margin: 28px 0 10px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #1a1a1a;
+  font-weight: 500;
+}
+
+.lesson-content h3 {
+  font-size: 1.1rem;
+  color: #c0c0c0;
+  margin: 20px 0 6px 0;
+  font-weight: 500;
+}
+
+.lesson-content p {
+  line-height: 1.7;
+  color: #a3a3a3;
+  margin: 0 0 14px 0;
+}
+
+.lesson-content code {
+  background: #0d0d0d;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: #d4d4d4;
+}
+
+.lesson-content pre {
+  background: #0a0a0a;
+  padding: 14px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 14px 0;
+  border: 1px solid #1a1a1a;
+}
+
+.lesson-content pre code {
+  background: transparent;
+  padding: 0;
+  color: #c0c0c0;
+  font-size: 0.85rem;
+}
+
+.lesson-content :not(pre) > code {
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+}
+
+.lesson-content blockquote {
+  border-left: 3px solid #3b82f6;
+  margin: 14px 0;
+  padding: 8px 16px;
+  background: #0a0a0a;
+  border-radius: 0 6px 6px 0;
+}
+
+.lesson-content blockquote p {
+  margin: 0;
+  color: #a3a3a3;
+}
+
+.lesson-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 0.9rem;
+}
+
+.lesson-content th {
+  background: #0a0a0a;
+  color: #e5e5e5;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.lesson-content th:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+.lesson-content th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+.lesson-content td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #1a1a1a;
+  color: #a3a3a3;
+}
+
+.lesson-content tr:nth-child(even) td {
+  background: #080808;
+}
+
+.lesson-content ul, .lesson-content ol {
+  line-height: 1.8;
+  color: #a3a3a3;
+  margin: 6px 0 14px 0;
+  padding-left: 24px;
+}
+
+.lesson-content li {
+  margin: 3px 0;
+}
+
+.lesson-content hr {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  margin: 28px 0;
+}
+
+.lesson-content strong {
+  color: #d4d4d4;
+}
+
+.lesson-content a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.lesson-content a:hover {
+  color: #93bbfd;
+  text-decoration: underline;
+}
