@@ -11,10 +11,89 @@ html, body, #root {
   color: #a3a3a3;
 }
 
+/* ── Desktop split layout ── */
+
 .app {
   display: flex;
   height: 100vh;
 }
+
+/* ── Mobile full-screen pages ── */
+
+.app-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mobile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn {
+  background: #141414;
+  border: 1px solid #1a1a1a;
+  color: #a3a3a3;
+  padding: 7px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.back-btn:hover {
+  background: #1f1f1f;
+  color: #d4d4d4;
+}
+
+.mobile-lesson-label {
+  font-size: 0.85rem;
+  color: #525252;
+  font-weight: 500;
+}
+
+/* ── Mobile sidebar overrides ── */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    height: 100vh;
+    border-right: none;
+  }
+
+  .lesson-view {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .lesson-content {
+    padding: 28px 20px 60px;
+  }
+
+  .lesson-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .lesson-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .lesson-content pre {
+    padding: 14px;
+  }
+}
+
+/* ── Scrollbar ── */
 
 ::-webkit-scrollbar {
   width: 8px;
