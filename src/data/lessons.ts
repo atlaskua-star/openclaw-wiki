@@ -415,7 +415,7 @@ Now I can vet any skill before installing:
       '| Image attachments | ✅ | ✅ | ✅ |',
       '| Code blocks | ✅ | ✅ | ✅ |',
       '| Group chats | ✅ | ✅ | ❌ |',
-      '| Voice messages | ❌ | ❌ | ❌ |',
+      '| Voice messages | ✅ (transcribed) | ✅ (transcribed) | ❌ |',
       '| Reactions / emoji | ✅ | ✅ | ✅ |',
       '',
       'Your agent is aware of which channel it is talking through and adjusts formatting accordingly — for example, it will not send markdown tables to WhatsApp, and it will suppress link embeds on Discord where appropriate.',
