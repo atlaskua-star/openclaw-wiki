@@ -12,6 +12,8 @@ A hands-on tutorial site for learning OpenClaw — built with React + TypeScript
 | 4 | Channels & Connecting Apps | ✅ |
 | 5 | Automation & Cron Jobs | ✅ |
 | 6 | Advanced: Sub-agents & Multi-step Flows | ✅ |
+| 7 | Multi-Agent Architecture | ✅ |
+| 8 | Sandbox & Execution Security | ⏳ |
 
 ## 🚀 Live Preview
 
